@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Raw To Pnach</title>
+</head>
+
+<body class="bg-slate-900">
+    <h1 class="text-center text-2xl text-white pt-5 pb-5 bg-slate-950">Raw Code To Pnach Converter</h1>
+    <div class="w-[95%] mr-auto ml-auto">
+        <div class="flex justify-between">
+            <p class="text-white text-xl" id="text1">Inputkan Disini</p>
+            <div class="flex">
+                <p class="cursor-pointer text-white text-xl biruNavigasi mr-1 w-20 text-center rounded-[4px] select-none hover:bg-blue-800"
+                    onclick="document.getElementById('inputTextArea').value='';document.getElementById('outputTextArea').value='';">
+                    Clear</p>
+                <p class="text-white cursor-pointer text-xl biruNavigasi ml-1 w-20 text-center rounded-[4px] select-none hover:bg-blue-800"
+                    id="paste">Paste</p>
+            </div>
+        </div><textarea id="inputTextArea"
+            class="bg-slate-700 w-full text-white h-[50vh] rounded-lg outline-green-600 outline-2 text-xl font-semibold font-mono tracking-wider pl-1 caret-emerald-600 selection:bg-pink-600"></textarea><span
+            class="inline-block w-full text-center mt-10 mb-10"><button
+                class="text-white text-2xl bg-blue-700 w-72 h-16 rounded-md hover:bg-blue-800" id="button"
+                onclick="document.getElementById('outputTextArea').scrollIntoView()">CONVERT</button></span>
+        <div class="flex text-white justify-between">
+            <p class="text-white text-xl" id="text2">Hasilnya Disini</p>
+            <p class="text-xl cursor-pointer biruNavigasi w-28 text-center rounded-[4px] select-none hover:bg-blue-700"
+                id="copy">Salin Text</p>
+        </div><textarea id="outputTextArea"
+            class="bg-slate-700 w-full text-white rounded-lg outline-green-600 outline-2 h-[50vh] text-xl font-semibold font-mono tracking-wider pl-1 caret-emerald-600 selection:bg-pink-600"
+            readonly></textarea>
+    </div>
+    <footer class="text-center text-white pt-2 pb-2 bg-slate-950">Created By Eszuri</footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
